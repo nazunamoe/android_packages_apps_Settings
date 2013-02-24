@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cluster="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+        android:key="cluster"
+        android:title="@string/cluster_about">
+
+        <Preference
+            android:key="cluster_website"
+            android:title="@string/cluster_website_title" />
+
+        <Preference
+            android:key="cluster_source"
+            android:title="@string/cluster_source_title" />
+
+        <com.android.settings.cluster.DeveloperPreference
+            android:title="CLUSTER Dev"
+            cluster:nameDev="CLUSTER Dev"
+            cluster:twitterHandle="CLUSTERDev" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="devs"
+        android:title="@string/devs">
+        <com.android.settings.cluster.DeveloperPreference
+            android:title="Lee MiRu"
+            cluster:nameDev="Lee MiRu"
+            cluster:twitterHandle="MiRu_Developer" />
+
+        <com.android.settings.cluster.DeveloperPreference
+            android:title="Lee DongIn"
+            cluster:nameDev="Lee DongIn"
+            cluster:twitterHandle="donginl" />
+
+        <com.android.settings.cluster.DeveloperPreference
+            android:title="Lee KyuWon"
+            cluster:nameDev="Lee KyuWon"
+            cluster:twitterHandle="ltelg" />
+
+        <com.android.settings.cluster.DeveloperPreference
+            android:title="Choi KiSup"
+            cluster:nameDev="Choi KiSup"
+            cluster:twitterHandle="oon04144" />
+
+        <com.android.settings.cluster.DeveloperPreference
+            android:title="Son DongHyeon"
+            cluster:nameDev="Son DongHyeon"
+            cluster:twitterHandle="happydh1" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

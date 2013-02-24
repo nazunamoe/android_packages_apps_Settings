@@ -651,6 +651,7 @@
         <activity android:name="Settings$ManageApplicationsActivity"
                 android:label="@string/applications_settings"
                 android:taskAffinity=""
+		android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
                 android:excludeFromRecents="true"
                 android:uiOptions="none">
             <intent-filter>
@@ -717,6 +718,7 @@
                   android:label="@string/application_info_label"
                   android:exported="true"
                   android:taskAffinity=""
+		  android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
                   android:parentActivityName="Settings$ManageApplicationsActivity">
         </activity>
 
@@ -736,7 +738,8 @@
         <activity android:name="Settings$RunningServicesActivity"
                 android:label="@string/runningservices_settings_title"
                 android:taskAffinity="com.android.settings"
-                android:parentActivityName="Settings">
+                android:parentActivityName="Settings"
+		android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -965,22 +968,7 @@
         <activity android:name="ChooseLockPassword" android:exported="false"
             android:windowSoftInputMode="stateVisible|adjustResize"/>
 
-        <!-- Anonymous Statistics -->
-        <receiver android:name=".cmstats.ReportingServiceManager"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingServiceManager">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
-
-        <service android:label="ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:name=".cmstats.ReportingService">
-        </service>
+        <activity android:name="ChooseLockPatternTutorial" android:exported="false"/>
 
         <!-- Runs in the phone process since it needs access to the Phone object -->
         <activity android:name=".deviceinfo.Status"
@@ -1462,6 +1450,9 @@
         />
 
         <!-- CyanogenMod activities Start -->
+
+        <activity android:name=".cluster.About" />
+
         <activity android:name=".cyanogenmod.PowerWidget" />
 
         <activity android:name=".cyanogenmod.SystemSettings" />
@@ -1526,8 +1517,6 @@
 
         <activity android:name=".cyanogenmod.LockscreenTargets" />
 
-        <activity android:name=".cyanogenmod.ChangeLog" />
-
         <activity android:name=".cyanogenmod.LockscreenInterface" />
 
         <activity android:name=".cyanogenmod.LockscreenButtons" />
@@ -1550,14 +1539,6 @@
         <activity android:name=".notificationlight.BatteryLightSettings" />
 
         <activity android:name=".ApnEditor" />
-
-        <activity android:name="Settings$AnonymousStatsActivity"
-                android:label="@string/anonymous_statistics_title"
-                android:configChanges="orientation|keyboardHidden|screenSize"
-                android:clearTaskOnLaunch="true">
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.cmstats.AnonymousStats" />
-        </activity>
 
         <!-- CyanogenMod activities End -->
 

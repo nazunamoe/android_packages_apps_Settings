@@ -125,7 +125,6 @@ public class Settings extends PreferenceActivity
             R.id.accessibility_settings,
             R.id.interface_section,
             R.id.launcher_settings,
-            R.id.lock_screen_settings,
             R.id.system_settings
     };
 
@@ -482,8 +481,7 @@ public class Settings extends PreferenceActivity
                         || Utils.isMonkeyRunning()) {
                     target.remove(i);
                 }
-            } else if (id == R.id.development_settings
-                    || id == R.id.performance_settings) {
+            } else if (id == R.id.development_settings) {
                 if (!showDev) {
                     target.remove(i);
                 }

@@ -4469,7 +4469,7 @@
     <string name="device_hostname">Device hostname</string>
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">CyanogenMod version</string>
+    <string name="mod_version">CLUSTER OS version</string>
     <string name="mod_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build date</string>
@@ -4515,11 +4515,11 @@
     <string name="themes_settings_title">Themes</string>
 
     <!-- System Interface settings  -->
-    <string name="system_settings_title">System</string>
+    <string name="system_settings_title">CLUSTER OS Settings</string>
     <string name="system_interface_title">System interface</string>
 
     <!-- Notification Drawer  -->
-    <string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_drawer_title">Toggles</string>
 
     <string name="lock_screen_title">Lock screen</string>
 
@@ -5169,6 +5169,23 @@
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
+
+    <!-- Summary -->
+    <string name="navigation_bar_summary">Add/remove softkeys, change order</string>
+    <string name="hardware_keys_summary">Customize hardware keys, long press actions</string>
+    <string name="toggles_summary">Pull down toggle selection, order, behavior</string>
+    <string name="power_menu_summary">Add/remove items in the extended power menu</string>
+    <string name="status_bar_summary">Customize battery icon, signal text, etc...</string>
+    <string name="themes_summary">Choose between different UI themes/colors</string>
+    <string name="lockscreen_summary">Customize lockscreen target , weather , etc...</string>
+    <string name="performance_summary">Custom Kernel settings</string>
+
+    <string name="cluster_about">About CLUSTER Dev</string>
+    <string name="cluster_website_title">CLUSTER Dev Website</string>
+    <string name="cluster_source_title">CLUSTER Dev GitHub</string>
+    <string name="devs">Developers</string>
+
+    <string name="quick_settings_panel_summary">Customize QuickPanel Tiles</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
